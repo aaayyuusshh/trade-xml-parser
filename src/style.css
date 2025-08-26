@@ -1,0 +1,102 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+textarea {
+    width: 100%;
+    height: 180px;
+    padding: 12px;
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+}
+
+textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #2980b9;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+pre {
+    background-color: #f7f9fc;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    .container { padding: 20px; }
+    textarea { height: 150px; }
+    button { font-size: 14px; padding: 10px; }
+}
+
+button#copyButton {
+    background-color: #21b025;
+   
+}
+
+button#copyButton:hover {
+    background-color: #40c947;
+}

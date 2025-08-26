@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trade XML Parser</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>💹 Trade XML Parser</h2>
+    <p>Paste your trade XML here:</p>
+    <textarea id="xmlInput">
+<trades>
+    <trade>
+        <id>1</id>
+        <symbol>AAPL</symbol>
+        <quantity>100</quantity>
+        <price>175.50</price>
+    </trade>
+    <trade>
+        <id>2</id>
+        <symbol>GOOG</symbol>
+        <quantity>50</quantity>
+        <price>2850.00</price>
+    </trade>
+     <trade>
+        <id>3</id>
+        <symbol>MSFT</symbol>
+        <quantity>200</quantity>
+        <price>300.25</price>
+    </trade>
+    <trade>
+        <id>4</id>
+        <symbol>TSLA</symbol>
+        <quantity>30</quantity>
+        <price>720.00</price>
+    </trade>
+    <trade>
+        <id>5</id>
+        <symbol>AMZN</symbol>
+        <quantity>75</quantity>
+        <price>3450.75</price>
+    </trade>
+</trades>
+    </textarea>
+    <button id="parseBtn">Parse Trades</button>
+
+    <h3>Parsed Output:</h3>
+    <pre id="output"></pre>
+    <button id="copyButton" onclick="copyOutput()">Copy Output</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
