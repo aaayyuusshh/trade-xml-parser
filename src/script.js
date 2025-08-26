@@ -44,3 +44,16 @@ function copyOutput() {
         alert("Failed to copy text: ", err);
     });
 }
+
+function downloadOutput() {
+    const output = document.getElementById("output").textContent;
+    const blob = new Blob([output.replace(/\n/g, "\r\n")], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "parsed.txt";
+    a.click();
+
+    URL.revokeObjectURL(url);
+}
